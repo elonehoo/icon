@@ -1,0 +1,10 @@
+{
+  "name": "@elonehoo/icon",
+  "version": "0.0.0",
+  "description": "Pure CSS Icons",
+  "scripts": {
+  },
+  "keywords": ["icons","iconify","css-icons"],
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "license": "MIT"
+}
