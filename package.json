@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "description": "Pure CSS Icons",
-  "scripts": {},
+  "scripts": {
+    "core-build": "pnpm -C core run build",
+    "example-dev":"pnpm -C example run dev"
+  },
   "keywords": [
     "icons",
     "iconify",

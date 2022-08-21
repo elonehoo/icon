@@ -1,0 +1,15 @@
+{
+  "name": "@elonehoo/icon-example",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 3333 --open",
+    "build": "vite build",
+    "preview": "vite preview --port 8766 --open"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@elonehoo/icon": "workspace:*"
+  }
+}
