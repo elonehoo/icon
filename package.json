@@ -1,12 +1,12 @@
 {
   "name": "@elonehoo/icon-monorepo",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.0",
   "private": true,
   "description": "Pure CSS Icons",
   "scripts": {
     "core-build": "pnpm -C core run build",
     "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
-    "example-dev":"pnpm -C example run dev"
+    "example-dev": "pnpm -C example run dev"
   },
   "keywords": [
     "icons",
