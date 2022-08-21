@@ -3,6 +3,15 @@
   "version": "0.0.1-beta.0",
   "type": "module",
   "description": "Pure CSS Icons",
+  "funding": "https://github.com/sponsors/elonehoo",
+  "homepage": "https://github.com/elonehoo/icon#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/icon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/icon/issues"
+  },
   "keywords": [
     "icons",
     "iconify",
