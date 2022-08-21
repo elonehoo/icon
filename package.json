@@ -5,6 +5,7 @@
   "description": "Pure CSS Icons",
   "scripts": {
     "core-build": "pnpm -C core run build",
+    "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
     "example-dev":"pnpm -C example run dev"
   },
   "keywords": [
