@@ -63,15 +63,29 @@ const svgAttributesStr = Object.keys(svgAttributes)
 const svg = `<svg ${svgAttributesStr}>${replaceIDs(renderData.body)}</svg>`;
 const uri = ref(`url("data:image/svg+xml;utf8,${encodeSvgForCss(svg)}")`)
 onMounted(()=>{
-  document.styleSheets[0].insertRule(`.${collection}-${name} {
-    background:${uri.value} no-repeat;
-    -webkit-background:${uri.value} no-repeat;
-    background-size:100% 100%;
-    -webkit-background-size:100% 100%;
-    background-color:transparent;
-    width:${props.size}em;
-    height:${props.size}em;
-  }`)
+  const mode = svg.includes('currentColor') ? 'mask' : 'bg'
+  if(mode === 'mask'){
+    document.styleSheets[0].insertRule(`.${collection}-${name} {
+      mask:${uri.value} no-repeat;
+      -webkit-mask:${uri.value} no-repeat;
+      mask-size:100% 100%;
+      -webkit-mask-size:100% 100%;
+      background-color:currentColor;
+      width:${props.size}em;
+      height:${props.size}em;
+    }`)
+  }else {
+    document.styleSheets[0].insertRule(`.${collection}-${name} {
+      background:${uri.value} no-repeat;
+      -webkit-background:${uri.value} no-repeat;
+      background-size:100% 100%;
+      -webkit-background-size:100% 100%;
+      background-color:transparent;
+      width:${props.size}em;
+      height:${props.size}em;
+    }`)
+  }
+
 })
 </script>
 <template>
