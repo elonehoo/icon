@@ -18,7 +18,7 @@
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
     "@elonehoo/rimraf": "0.0.1",
-    "@vitejs/plugin-vue": "3.1.0",
+    "@vitejs/plugin-vue": "3.2.0",
     "bumpp": "8.2.1",
     "eslint": "8.23.0",
     "pnpm": "7.11.0",
